@@ -77,12 +77,12 @@ end
 
 function zephyr.load_syntax()
   local syntax = {
-    Normal = {fg = zephyr.fg,bg=zephyr.bg};
+    Normal = {fg = zephyr.fg,bg=zephyr.none};
     Terminal = {fg = zephyr.fg,bg=zephyr.bg};
-    SignColumn = {fg=zephyr.fg,bg=zephyr.bg};
+    SignColumn = {fg=zephyr.fg,bg=zephyr.none};
     FoldColumn = {fg=zephyr.fg_alt,bg=zephyr.black};
     VertSplit = {fg=zephyr.black,bg=zephyr.bg};
-    Folded = {fg=zephyr.grey,bg=zephyr.bg_highlight};
+    Folded = {fg=zephyr.fg,bg=zephyr.none};
     EndOfBuffer = {fg=zephyr.bg,bg=zephyr.none};
     IncSearch = {fg=zephyr.bg1,bg=zephyr.orange,style=zephyr.none};
     Search = {fg=zephyr.bg,bg=zephyr.orange};
@@ -93,9 +93,9 @@ function zephyr.load_syntax()
     iCursor = {fg=zephyr.none,bg=zephyr.none,style='reverse'};
     lCursor = {fg=zephyr.none,bg=zephyr.none,style='reverse'};
     CursorIM = {fg=zephyr.none,bg=zephyr.none,style='reverse'};
-    CursorColumn = {fg=zephyr.none,bg=zephyr.bg_highlight};
-    CursorLine = {fg=zephyr.none,bg=zephyr.bg_highlight};
-    LineNr = {fg=zephyr.base4};
+    CursorColumn = {fg=zephyr.none,bg='#4e4e4e'};
+    CursorLine = {fg=zephyr.none,bg=zephyr.fg_alt};
+    LineNr = {fg=zephyr.base6};
     qfLineNr = {fg=zephyr.cyan};
     CursorLineNr = {fg=zephyr.blue};
     DiffAdd = {fg=zephyr.black,bg=zephyr.dark_green};
@@ -165,7 +165,7 @@ function zephyr.load_syntax()
 
     Comment = {fg=zephyr.base6};
     SpecialComment = {fg=zephyr.grey};
-    Todo = {fg=zephyr.violet};
+    Todo = {fg=zephyr.red, bg=zephyr.yellow};
     Delimiter = {fg=zephyr.fg};
     Ignore = {fg=zephyr.grey};
     Underlined = {fg=zephyr.none,style='underline'};
