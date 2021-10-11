@@ -163,7 +163,7 @@ function zephyr.load_syntax()
     Macro = {fg=zephyr.cyan};
     Identifier = {fg=zephyr.blue};
 
-    Comment = {fg=zephyr.base6};
+    Comment = {fg=zephyr.base7};
     SpecialComment = {fg=zephyr.grey};
     Todo = {fg=zephyr.red, bg=zephyr.yellow};
     Delimiter = {fg=zephyr.fg};
